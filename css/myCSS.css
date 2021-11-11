@@ -1,0 +1,61 @@
+p {
+	font-size: 20px;
+}
+.navbar-brand {
+	color: black !important;
+}
+
+.nav-link:not(:hover) {
+	color: #e2e2e2;
+}
+
+.nav-link:hover {
+	color: black;
+}
+
+a.active {
+	color: black !important;
+}
+
+.container {
+	padding-top: 10px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+}
+body {
+	background-color:black;
+	padding-top: 75px;
+	min-height:100%;
+}
+
+.jumbotron {
+	background-color: white !important;
+}
+
+#nav {
+	background-color: #A3C6C4 !important;
+	opacity: 0.94;
+}
+
+.iframe {
+	border: none;
+}
+
+table {
+	background-color:rgba(255,255,255,0.1);
+	margin-left:auto; 
+    margin-right:auto;
+	margin-bottom: 100px;
+}
+
+td:hover {
+	background-color: rgba(255,215,0,0.2);
+}
+
+td.clicked {
+	background-color: gold;
+}
