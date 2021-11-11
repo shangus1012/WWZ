@@ -102,7 +102,7 @@ function createNav(pageNum) { // nav를 생성하는 함수
    nav.innerHTML = "";
    nav.setAttribute('class', 'navbar navbar-expand-lg navbar-light fixed-top');
 
-   nav.innerHTML += "<a class='navbar-brand' href='https://github.com/shangus1012/manga'>월드워Z</a>";
+   nav.innerHTML += "<a class='navbar-brand' href='https://github.com/shangus1012/WWZ'>월드워Z</a>";
    button();//function
    pageList(pageNum);//function
    createTable(pageNum);
