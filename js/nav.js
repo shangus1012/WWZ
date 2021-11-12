@@ -92,6 +92,14 @@ function pageList(pageNum) {//탭목록 구현
    ul.appendChild(H);
    div.appendChild(ul);
 
+   var temp = document.createElement('button');
+   temp.setAttribute('class', 'btn btn-primary');
+   temp.setAttribute('type', 'button');
+   temp.setAttribute('onclick', "help();");
+   temp.innerHTML += "도움말";
+
+   div.appendChild(temp);
+
 
    nav.appendChild(div);
 }
