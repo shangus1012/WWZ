@@ -6,19 +6,24 @@ function createTable(pageNum) {
         for (var i = 1; i < 30; i++) {
             if (i % 10) {
                 var target = document.getElementsByClassName(i);
-                target[n].setAttribute("onclick", "select(" + n + "," + i + ");saveTable();");
+                target[n].setAttribute("onclick", "select(" + n + "," + i + ");saveTable();changeIframe(" + n + ", " + i + ");");
                 target[n].setAttribute("class", i);
                 target[n].setAttribute("name", n);
-                target[n].innerHTML = "<img src='media/" + className + "/" + i + ".png' alt = '" + className + n + i + "'>";
+                target[n].innerHTML = "<img src='media/icon/" + className + "/" + i + ".png' alt = '" + className + n + i + "'>";
             }
             if (i < 9) {
                 var target = document.getElementsByClassName("red" + i);
                 target[n].setAttribute("onclick", "select('red" + i + "');");
-                target[n].innerHTML = "<img src='media/" + className + "/red" + i + ".png' alt = '" + className + n + i + "'>";
+                target[n].innerHTML = "<img src='media/icon/" + className + "/red" + i + ".png' alt = '" + className + n + i + "'>";
             }
         }
     }
     loadTable();
+}
+
+function changeIframe(n, i) {
+    var target= document.getElementById("iframe" + n);
+    target.setAttribute("src", "media/iframe/" + numToName() +"/" + i + ".html");
 }
 
 function select(n, i) {
