@@ -115,10 +115,3 @@ function createNav(pageNum) { // nav를 생성하는 함수
    pageList(pageNum);//function
    createTable(pageNum);
 }
-
-/*
-    source : https://github.com/shangus1012/manga
-    제작자 : 만갤 여주학대만화추천(rmh0102)
-    모든 소스코드는 직접 작성한 것이고, 출처는 굳이 지워야만 한다면 상관 없습니다.
-    누군가 물어본다면 정보 공유를 위해서 출처를 표기해 주세요. 감사합니다.
-*/
